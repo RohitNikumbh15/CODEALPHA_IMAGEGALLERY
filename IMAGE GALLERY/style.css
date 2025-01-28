@@ -1,0 +1,64 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background:linear-gradient(45deg, #fff, #333);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for the file icons */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Individual File Box */
+.file {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.file:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* File Icon Styling */
+.file-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+}
+
+.file-icon:hover {
+    transform: scale(1.1);
+}
+
+/* File Link Styling */
+.file-link {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.2s ease;
+}
+
+.file-link:hover {
+    color: #007bff;
+}
